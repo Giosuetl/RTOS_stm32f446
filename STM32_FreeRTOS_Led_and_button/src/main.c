@@ -73,7 +73,7 @@ void button_task_handler(void *params)
 {
 	while(1)
 	{
-		if(GPIO_ReadInputDataBit(GPIOC,GPIO_Pin_13))//presionar el boton con la configuracion de esta placa da 0
+		if(GPIO_ReadInputDataBit(GPIOC,GPIO_Pin_13))
 		{
 			button_status_flag = NOT_PRESSED;
 		}
